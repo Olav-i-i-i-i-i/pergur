@@ -1,0 +1,8 @@
+body{
+    max-width: 50em;
+    margin: 0 auto;
+    background-color: aqua;
+    background-position: 300px;
+    background-image: -moz-linear-gradient(100px);
+    background-image: url(potatho.webp.png);
+}
