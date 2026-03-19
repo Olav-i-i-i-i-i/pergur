@@ -6,12 +6,29 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script>
+
+        window.onload = function() {
+        let algne = document.getElementById("clicks")
+        algne.innerHTML = localStorage.getItem("test")
+        }
+        function kaunter(){
+
+            let algne = document.getElementById("clicks")
+            let tulemus = Number(algne.innerHTML) + 1;
+            algne.innerHTML = tulemus;
+
+            localStorage.setItem("test",tulemus)
+        }
+
+    </script>
 </head>
 <body>
     <a href="index.html">avaleht</a>
     <a href="kontakt.html">kontakt</a>
     
-    <h1>Mikk Oad CV</h1>
+    <h1>Miki Uba CV</h1>
 
     <h1>kuku</h1>
 
@@ -19,7 +36,11 @@
     <p>Peeter tahab</p>
     <a href="https://perg.ee">mm</a>
 
+    <h3>klikke kokku: <span id = "clicks">0</span></h3>
+
     <img src="potatho.webp.png" alt="pildil on kartul">
+    <img src="nupp.png" alt="nupuke" onclick="kaunter()">
+    <img src="https://www.google.com/search?sca_esv=a7d38202f4f38a7c&rlz=1C1GCEA_enEE1206&udm=2&fbs=ADc_l-ay7Svi3MhG8nnjADVvNf-Z3O6VBjs5UgpoA8JgVthRsehFsQdcCD3C2CjA-9oxkkwVj2VSEX6B5QyoCtXHhafhPut0Fh6mhLo8OmJDtgDduZAzWLYOLXoLMSzYY5OmnHbNY90mqHfeuyRrCtQ9C8--HtPga7klzaHMmsto0AuoyqGX_Is&q=click+red+button&sa=X&sqi=2&ved=2ahUKEwjY74_-uKuTAxVWFBAIHZ93KmcQtKgLegQIDhAB&biw=1249&bih=1277&dpr=1#sv=CAMSVhoyKhBlLVBnVURrNlBmOWJ4cTlNMg5QZ1VEazZQZjlieHE5TToORjZLbS1wNEJZQTlPVk0gBCocCgZtb3NhaWMSEGUtUGdVRGs2UGY5YnhxOU0YADABGAcgy9e0jAswAkoIEAEYASABKAE" alt="nupp"onclick="kaunter()">
      <table>õunad laual</table>
 </body>
 </html>
